@@ -1,0 +1,3 @@
+Description="#777 - KTM Racing VE (Enduro)"
+
+Painter="HiTone PaintWorX"

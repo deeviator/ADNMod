@@ -1,0 +1,3 @@
+Description="#22 - Team Two Two Enduro Livery"
+
+Painter="HiTone PaintWorX"

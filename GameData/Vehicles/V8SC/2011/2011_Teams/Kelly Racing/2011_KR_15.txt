@@ -1,0 +1,3 @@
+Description="Rick Kelly #15 - Kelly Racing"
+
+Painter="DV8R"

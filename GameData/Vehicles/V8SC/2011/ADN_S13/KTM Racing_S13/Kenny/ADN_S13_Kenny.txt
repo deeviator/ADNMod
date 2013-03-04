@@ -1,0 +1,3 @@
+Description="#12 - KTM Racing VE"
+
+Painter="HiTone PaintWorX"

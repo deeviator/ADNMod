@@ -1,0 +1,3 @@
+Description="Steven Johnson #17 - Dick Johnson Racing"
+
+Painter="AXE"

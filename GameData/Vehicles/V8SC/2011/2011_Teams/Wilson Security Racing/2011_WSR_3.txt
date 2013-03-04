@@ -1,0 +1,3 @@
+Description="Tony D'Alberto #3 - Wilson Security Racing"
+
+Painter="Bergmeister"

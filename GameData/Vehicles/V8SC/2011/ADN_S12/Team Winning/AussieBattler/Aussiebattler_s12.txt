@@ -1,0 +1,3 @@
+Description="#73 Aussiebattler"
+
+Painter="Aussiebattler"

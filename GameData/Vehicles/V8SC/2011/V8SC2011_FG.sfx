@@ -1,0 +1,419 @@
+
+// All Rights Reserved.
+// Last edit 2-12-2011 For AdrenalinFactor.com
+
+
+
+//-----------------------
+// ENGINE SOUNDS 
+//-----------------------
+
+// ENGINE SOUNDS (INSIDE)
+
+// ENGINE SOUNDS (INSIDE)
+
+// inside coasting
+VS_INSIDE_COAST_ENGINE_1=1.8,V8SC2011_Sounds\offi.wav
+VS_INSIDE_COAST_ENGINE_2=1.7,V8SC2011_Sounds\offi1.wav
+VS_INSIDE_COAST_ENGINE_3=1.8,V8SC2011_Sounds\offi2.wav
+VS_INSIDE_COAST_ENGINE_4=1.9,V8SC2011_Sounds\offi3.wav
+VS_INSIDE_COAST_ENGINE_5=2.0,V8SC2011_Sounds\offi4.wav
+
+
+// inside on-throttle
+VS_INSIDE_POWER_ENGINE_1=1.8,V8SC2011_Sounds\oni.wav
+VS_INSIDE_POWER_ENGINE_2=2.0,V8SC2011_Sounds\oni1.wav
+VS_INSIDE_POWER_ENGINE_3=1.9,V8SC2011_Sounds\oni2.wav
+VS_INSIDE_POWER_ENGINE_4=2.0,V8SC2011_Sounds\oni3.wav
+VS_INSIDE_POWER_ENGINE_5=3.0,V8SC2011_Sounds\oni4.wav
+
+VS_INSIDE_ENGINE_STARTING=1.2,V8SC2011_Sounds\Holden_startup_in.wav
+
+
+// OUTSIDE coasting
+VS_OUTSIDE_COAST_ENGINE_1=1.8,V8SC2011_Sounds\offe.wav
+VS_OUTSIDE_COAST_ENGINE_2=1.7,V8SC2011_Sounds\offe1.wav
+VS_OUTSIDE_COAST_ENGINE_3=1.8,V8SC2011_Sounds\offe2.wav
+VS_OUTSIDE_COAST_ENGINE_4=1.9,V8SC2011_Sounds\offe3.wav
+VS_OUTSIDE_COAST_ENGINE_5=2.0,V8SC2011_Sounds\offe4.wav
+
+
+// OUTSIDE on-throttle
+VS_OUTSIDE_POWER_ENGINE_1=1.8,V8SC2011_Sounds\one.wav
+VS_OUTSIDE_POWER_ENGINE_2=2.0,V8SC2011_Sounds\one1.wav
+VS_OUTSIDE_POWER_ENGINE_3=1.9,V8SC2011_Sounds\one2.wav
+VS_OUTSIDE_POWER_ENGINE_4=2.0,V8SC2011_Sounds\one3.wav
+VS_OUTSIDE_POWER_ENGINE_5=2.0,V8SC2011_Sounds\one4.wav
+
+
+VS_Outside_ENGINE_STARTING=1.2,V8SC2011_Sounds\Holden_startup_ex.wav
+
+// BACKFIRE & SHIFT SOUNDS (INSIDE)
+
+VS_INSIDE_SHIFT_UP_1=2.1,V8SC2011_Sounds\int_shift_up_1.wav
+VS_INSIDE_SHIFT_UP_2=2.1,V8SC2011_Sounds\int_shift_up_1.wav
+VS_INSIDE_SHIFT_UP_3=2.1,V8SC2011_Sounds\int_shift_up_2.wav
+VS_INSIDE_SHIFT_DOWN_1=1.7,V8SC2011_Sounds\int_shift_up_1.wav
+VS_INSIDE_SHIFT_DOWN_2=1.7,V8SC2011_Sounds\int_shift_up_1.wav
+VS_INSIDE_SHIFT_DOWN_3=1.7,V8SC2011_Sounds\int_shift_up_2.wav
+
+VS_INSIDE_BACKFIRE_1=V8SC2011_Sounds\BFin01.wav
+VS_INSIDE_BACKFIRE_2=V8SC2011_Sounds\BFin02.wav
+VS_INSIDE_BACKFIRE_3=V8SC2011_Sounds\BFin03.wav
+
+// BACKFIRE & SHIFT SOUNDS (Outside)
+
+VS_Outside_SHIFT_UP_1=1.7,V8SC2011_Sounds\ext_shift_up.wav
+VS_Outside_SHIFT_UP_2=1.7,V8SC2011_Sounds\ext_shift_up.wav
+VS_Outside_SHIFT_UP_3=1.7,V8SC2011_Sounds\ext_shift_up.wav
+VS_Outside_SHIFT_DOWN_1=1.7,V8SC2011_Sounds\ext_shift_down.wav
+VS_Outside_SHIFT_DOWN_2=1.7,V8SC2011_Sounds\ext_shift_down.wav
+VS_Outside_SHIFT_DOWN_3=1.7,V8SC2011_Sounds\ext_shift_down.wav
+
+VS_Outside_BACKFIRE_1=V8SC2011_Sounds\BFout01.wav
+VS_Outside_BACKFIRE_2=V8SC2011_Sounds\BFout02.wav
+VS_Outside_BACKFIRE_3=V8SC2011_Sounds\BFout03.wav
+
+// ROAD SURFACE SOUNDS  (INSIDE)
+
+VS_INSIDE_ROADNOISE_DRY=TMTires\roadroll_in.wav
+VS_INSIDE_ROADNOISE_WET=TMTires\roadroll_in.wav
+VS_INSIDE_ROADNOISE_GRASS=TMTires\grassroll_in.wav
+VS_INSIDE_ROADNOISE_DIRT=TMTires\gravelroll_in.wav
+VS_INSIDE_ROADNOISE_GRAVEL=TMTires\gravelroll_in.wav
+VS_INSIDE_ROADNOISE_RUMBLESTRIP=Secondary\rumble_in.wav
+
+// ROAD SURFACE SOUNDS  (Outside)
+
+VS_Outside_ROADNOISE_DRY=TMTires\roadroll_ex.wav
+VS_Outside_ROADNOISE_WET=TMTires\roadroll_ex.wav
+VS_Outside_ROADNOISE_GRASS=TMTires\grassroll_ex.wav
+VS_Outside_ROADNOISE_DIRT=TMTires\gravelroll_ex.wav
+VS_Outside_ROADNOISE_GRAVEL=6.5, Gravel\int_gravel.wav
+VS_Outside_ROADNOISE_RUMBLESTRIP=Secondary\rumble_ex.wav
+
+// SKID SOUNDS (INSIDE)
+// SKID SOUNDS (INSIDE)
+
+VS_INSIDE_TIRE_SCRUB=1.2, TMTires\scrub1_dry_in.wav
+VS_INSIDE_SKID_DRY=1.0, TMTires\skid2_slk_dry_in.wav
+VS_INSIDE_SKID_WET=0.6, TMTires\skid2_dry_in.wav
+VS_INSIDE_SKID_GRASS=TMTires\grassskid_in.wav
+VS_INSIDE_SKID_DIRT=TMTires\gravelskid_in.wav
+VS_INSIDE_SKID_GRAVEL=6.5, Gravel\int_gravel_skid.wav
+
+// SKID SOUNDS (Outside)
+
+VS_Outside_TIRE_SCRUB=1.2, TMTires\scrub1_dry_ex.wav
+VS_Outside_SKID_DRY=1.8, TMTires\skid2_slk_dry_ex.wav
+VS_Outside_SKID_WET=0.4, TMTires\skid2_dry_ex.wav
+VS_Outside_SKID_GRASS=TMTires\grassskid_ex.wav
+VS_Outside_SKID_DIRT=TMTires\gravelskid_ex.wav
+VS_Outside_SKID_GRAVEL=4, Gravel\ext_Proto_gravel_skid.wav
+
+// SUSPENSION/CHASSIS
+
+SuspensionVolume=0.60 //(exaggerated, should probably be more like 0.15) // converts sum of (absolute value of) vertical suspension velocities to a volume
+SuspensionFreq=(2.0,0.40,0.80) // (max_vel, mult, base), so frequency multiplier = min( actual_susp_vel, max_vel ) * mult + base
+VS_INSIDE_SUSPENSION=Secondary\Chassis_noise_1.wav
+VS_Outside_SUSPENSION=Secondary\Chassis_noise_1.wav
+
+DirtyTire=(0.001,100.0) // frequency adjustment based on speed & dirtiness, threshold speed between low & high samples
+VS_INSIDE_DIRTY_TIRE_LOW=Secondary\marbles_low_loop_int.wav
+VS_INSIDE_DIRTY_TIRE_HIGH=Secondary\marbles_high_loop_int.wav
+VS_Outside_DIRTY_TIRE_LOW=Secondary\marbles_low_loop_ext.wav
+VS_Outside_DIRTY_TIRE_HIGH=Secondary\marbles_high_loop_ext.wav
+
+// CONTACT SOUNDS  (INSIDE)
+
+VS_INSIDE_SCRAPING=2.25, ambiant\scraping.wav
+
+VS_INSIDE_HIT_WALL_1=Secondary\hit1_wall.wav
+VS_INSIDE_HIT_WALL_2=Secondary\hit2_wall.wav
+VS_INSIDE_HIT_WALL_3=Secondary\hit3_wall.wav
+VS_INSIDE_HIT_WALL_4=Secondary\hit4_wall.wav
+VS_INSIDE_HIT_WALL_5=Secondary\hit5_wall.wav
+
+VS_INSIDE_HIT_OTHERCAR_1=Secondary\hit1_vehicle.wav
+VS_INSIDE_HIT_OTHERCAR_2=Secondary\hit2_vehicle.wav
+VS_INSIDE_HIT_OTHERCAR_3=Secondary\hit3_vehicle.wav
+VS_INSIDE_HIT_OTHERCAR_4=Secondary\hit4_vehicle.wav
+VS_INSIDE_HIT_OTHERCAR_5=Secondary\hit5_vehicle.wav
+
+VS_INSIDE_HIT_CONE=Secondary\conehit.wav
+
+// CONTACT SOUNDS  (Outside)
+
+VS_Outside_SCRAPING=Secondary\scrape_barrier_ex.wav
+
+VS_Outside_HIT_WALL_1=Secondary\hit1_wall.wav
+VS_Outside_HIT_WALL_2=Secondary\hit2_wall.wav
+VS_Outside_HIT_WALL_3=Secondary\hit3_wall.wav
+VS_Outside_HIT_WALL_4=Secondary\hit4_wall.wav
+VS_Outside_HIT_WALL_5=Secondary\hit5_wall.wav
+VS_Outside_HIT_OTHERCAR_1=Secondary\hit1_vehicle.wav
+VS_Outside_HIT_OTHERCAR_2=Secondary\hit2_vehicle.wav
+VS_Outside_HIT_OTHERCAR_3=Secondary\hit3_vehicle.wav
+VS_Outside_HIT_OTHERCAR_4=Secondary\hit4_vehicle.wav
+VS_Outside_HIT_OTHERCAR_5=Secondary\hit5_vehicle.wav
+
+VS_Outside_HIT_CONE=Secondary\conehit.wav
+
+
+// AMBIENT SOUNDS (INSIDE)
+
+VS_INSIDE_SPEED_LIMITER_TOGGLE=Secondary\limiter.wav
+VS_INSIDE_LAUNCH_CONTROL_TOGGLE=Secondary\launch.wav
+VS_INSIDE_WIND_NOISE=Ambiant\int_windnoise.wav
+VS_INSIDE_ON_FIRE=Secondary\fire_in.wav
+VS_INSIDE_HORN=Secondary\horn.wav
+VS_INSIDE_TRACTION_CONTROL=Secondary\tc_in.wav
+
+// AMBIENT SOUNDS (Outside)
+
+VS_Outside_SPEED_LIMITER_TOGGLE=Secondary\limiter.wav
+VS_Outside_LAUNCH_CONTROL_TOGGLE=Secondary\launch.wav
+VS_Outside_WIND_NOISE=0.1, secondary\windrush_ex.wav
+VS_Outside_ON_FIRE=Secondary\fire_in.wav
+VS_Outside_HORN=NULL
+VS_Outside_TRACTION_CONTROL=Secondary\tc_in.wav
+VS_INSIDE_SEAT=Secondary\seat.wav 
+VS_INSIDE_MIRROR=Secondary\mirror.wav
+
+//-------------------------
+// ATTENUATION
+//-------------------------
+
+EngineRange=60.0
+EngineShape=0.95
+EngineAmbient=1.00
+
+ShiftRange=60.0
+ShiftShape=1.0
+ShiftAmbient=1.00
+
+OtherRange=100.0
+OtherShape=1.95
+OtherAmbient=1.50
+
+
+// ENGINE VOLUME MIX
+playerEngineVolumeMinimum=0.4
+playerEngineVolumeThrottleFraction=0.7
+playerEngineVolumeRevFraction=0.2
+
+non-playerEngineVolumeMinimum=0.4
+non-playerEngineVolumeThrottleFraction=0.2
+non-playerEngineVolumeRevFraction=0.2
+
+
+// ENGINE THROTTLE-POSITION MIX
+EngineLoadBlendInside=(0.1,0.4)   // power sound starts to blend in at 30% throttle, coast sound blends out at 70%
+EngineLoadBlendOutside=(0.1,0.4)  // power sound starts to blend in at 30% throttle, coast sound blends out at 70%
+
+
+// ENGINE REV-SAMPLE MIX
+
+// ENGINE REV-SAMPLE MIX
+// coast inside
+EngineRPMCoastInside=0
+{
+  MinimumRPM=1.00         // above zero, but low enough to hear engine stall
+  MaximumRPM=1800.00     // must overlap properly
+  NaturalRPM=850.00   // engine RPM at which sample was recorded
+}
+
+EngineRPMCoastInside=1
+{
+  MinimumRPM=700.00     // must overlap properly
+  MaximumRPM=4000.00     // must overlap properly
+  NaturalRPM=6000.00    // engine RPM at which sample was recorded
+}
+
+EngineRPMCoastInside=2
+{
+  MinimumRPM=2000.00     // must overlap properly
+  MaximumRPM=5700.00     // must overlap properly
+  NaturalRPM=6000.00   // engine RPM at which sample was recorded
+}
+
+EngineRPMCoastInside=3
+{
+  MinimumRPM=4000.00     // must overlap properly
+  MaximumRPM=8500.00     // must overlap properly
+  NaturalRPM=6000.00   // engine RPM at which sample was recorded
+}
+
+EngineRPMCoastInside=4
+{
+  MinimumRPM=7801.00     // must overlap properly
+  MaximumRPM=9000.00     // must overlap properly
+  NaturalRPM=6000.00   // engine RPM at which sample was recorded
+}
+
+
+// power inside
+EngineRPMPowerInside=0
+{
+  MinimumRPM=500.00         // above zero, but low enough to hear engine stall
+  MaximumRPM=3950.00     // must overlap properly
+  NaturalRPM=6000.00    // engine RPM at which sample was recorded
+}
+
+EngineRPMPowerInside=1
+{
+  MinimumRPM=2000.00     // must overlap properly
+  MaximumRPM=4750.00     // must overlap properly
+  NaturalRPM=6000.00     // engine RPM at which sample was recorded
+}
+
+EngineRPMPowerInside=2
+{
+  MinimumRPM=3550.00     // must overlap properly
+  MaximumRPM=5750.00     // must overlap properly
+  NaturalRPM=6000.00     // engine RPM at which sample was recorded
+}
+
+
+EngineRPMPowerInside=3
+{
+  MinimumRPM=4751.00     // must overlap properly
+  MaximumRPM=8500.00     // must overlap properly
+  NaturalRPM=6000.00     // engine RPM at which sample was recorded
+}
+
+EngineRPMPowerInside=4
+{
+  MinimumRPM=5801.00     // must overlap properly
+  MaximumRPM=15000.00     // must overlap properly
+  NaturalRPM=6000.00     // engine RPM at which sample was recorded
+}
+
+
+// power Outside
+EngineRPMCoastOutside=0
+{
+  MinimumRPM=1.00         // above zero, but low enough to hear engine stall
+  MaximumRPM=1800.00     // must overlap properly
+  NaturalRPM=850.00   // engine RPM at which sample was recorded
+}
+
+EngineRPMCoastOutside=1
+{
+  MinimumRPM=700.00     // must overlap properly
+  MaximumRPM=4000.00     // must overlap properly
+  NaturalRPM=6000.00    // engine RPM at which sample was recorded
+}
+
+EngineRPMCoastOutside=2
+{
+  MinimumRPM=2000.00     // must overlap properly
+  MaximumRPM=5700.00     // must overlap properly
+  NaturalRPM=6000.00   // engine RPM at which sample was recorded
+}
+
+EngineRPMCoastOutside=3
+{
+  MinimumRPM=4000.00     // must overlap properly
+  MaximumRPM=8500.00     // must overlap properly
+  NaturalRPM=6000.00   // engine RPM at which sample was recorded
+}
+
+EngineRPMCoastOutside=4
+{
+  MinimumRPM=7801.00     // must overlap properly
+  MaximumRPM=9000.00     // must overlap properly
+  NaturalRPM=6000.00   // engine RPM at which sample was recorded
+}
+
+
+// power Outside
+EngineRPMPowerOutside=0
+{
+  MinimumRPM=500.00         // above zero, but low enough to hear engine stall
+  MaximumRPM=3950.00     // must overlap properly
+  NaturalRPM=6000.00    // engine RPM at which sample was recorded
+}
+
+EngineRPMPowerOutside=1
+{
+  MinimumRPM=2000.00     // must overlap properly
+  MaximumRPM=4750.00     // must overlap properly
+  NaturalRPM=6000.00     // engine RPM at which sample was recorded
+}
+
+EngineRPMPowerOutside=2
+{
+  MinimumRPM=3550.00     // must overlap properly
+  MaximumRPM=5750.00     // must overlap properly
+  NaturalRPM=6000.00     // engine RPM at which sample was recorded
+}
+
+
+EngineRPMPowerOutside=3
+{
+  MinimumRPM=4751.00     // must overlap properly
+  MaximumRPM=8500.00     // must overlap properly
+  NaturalRPM=6000.00     // engine RPM at which sample was recorded
+}
+
+EngineRPMPowerOutside=4
+{
+  MinimumRPM=5801.00     // must overlap properly
+  MaximumRPM=15000.00     // must overlap properly
+  NaturalRPM=6000.00     // engine RPM at which sample was recorded
+}
+
+
+
+// TRANNY-SAMPLE MIX
+
+VS_INSIDE_COAST_TRANNY_1=3, V8SC2011_Sounds\trany_coast_low.wav
+VS_INSIDE_COAST_TRANNY_2=3, V8SC2011_Sounds\trany_coast_high.wav
+VS_INSIDE_POWER_TRANNY_1=2, V8SC2011_Sounds\trany_power_low.wav
+VS_INSIDE_POWER_TRANNY_2=2, V8SC2011_Sounds\trany_power_high.wav
+
+VS_Outside_COAST_TRANNY_1=V8SC2011_Sounds\ext_trany_coast_low.wav
+VS_Outside_COAST_TRANNY_2=null
+VS_Outside_POWER_TRANNY_1=V8SC2011_Sounds\ext_trany_power_low.wav
+VS_Outside_POWER_TRANNY_2=null
+
+TrannyInitialRampRPM=2000.0 // ramp volume up to this driveshaft RPM because low pitches sound bad
+
+TrannyCoastBlendRPMInside=(1000.0, 3000.0) // blend range using driveshaft RPM
+TrannyCoast1RPMTorqueInside=(1200, 200.0) // natural RPM at which sample was recorded, transmission torque (in Nm) for maximum volume
+TrannyCoast2RPMTorqueInside=(1200, 150.0)
+
+TrannyPowerBlendRPMInside=(1000.0, 3000.0)
+TrannyPower1RPMTorqueInside=(1200, 100.0)
+TrannyPower2RPMTorqueInside=(1200, 240.0)
+
+TrannyCoastBlendRPMOutside=(1000.0, 2700.0) // blend range using driveshaft RPM
+TrannyCoast1RPMTorqueOutside=(1200, 150.0) // natural RPM at which sample was recorded, transmission torque (in Nm) for maximum volume
+TrannyCoast2RPMTorqueOutside=(1200, 150.0)
+
+TrannyPowerBlendRPMOutside=(1000.0, 2700.0)
+TrannyPower1RPMTorqueOutside=(1200, 350.0)
+TrannyPower2RPMTorqueOutside=(1200, 440.0)
+
+
+// BRAKE HISS 
+ 
+//VS_INSIDE_BRAKES_LOW=2, V8SC2011_Sounds\brakes_low_in.wav    // low-speed
+//VS_INSIDE_BRAKES_HIGH=5, V8SC2011_Sounds\brakes_low_in.wav  // high-speed 
+//VS_Outside_BRAKES_LOW=2, V8SC2011_Sounds\brakes_low_ex.wav   // low-speed 
+VS_Outside_BRAKES_HIGH=2.5, V8SC2011_Sounds\brakes_low_ex.wav // high-speed
+ 
+// Note: all speeds are in meters/sec: 50.0 m/s = 112 mph = 180 kph 
+//
+// Lower BrakePressure numbers will cause the volume to ramp up faster with 
+// less applied pressure, and will be more steady at higher pressures.
+// Higher BrakePressure numbers will tend to make the volume more dependent
+// on applied pressure.
+//
+// Temperature effects on brake hiss volume are not implemented yet. 
+ 
+BrakeRampSpeed=3.0            // volume ramps up to this speed
+BrakeBlendSpeeds=(8.0, 23.0)  // blends between low- and high-speed brake hiss
+BrakeFadeSpeeds=(23.0, 42.0)  // fades out high-speed brake hiss between these speeds
+BrakePressure=0.20            // defines how brake pressure affects brake hiss volume

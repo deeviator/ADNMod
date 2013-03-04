@@ -1,0 +1,3 @@
+Description="#*** Spare - Team Yamaha Racing"
+
+Painter="Bergmeister"

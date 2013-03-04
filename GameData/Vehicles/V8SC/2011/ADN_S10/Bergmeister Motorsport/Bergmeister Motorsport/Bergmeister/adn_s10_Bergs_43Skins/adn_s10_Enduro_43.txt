@@ -1,0 +1,3 @@
+Description="#43 Bergmeister Endurance Livery "
+
+Painter="Bergmeister"

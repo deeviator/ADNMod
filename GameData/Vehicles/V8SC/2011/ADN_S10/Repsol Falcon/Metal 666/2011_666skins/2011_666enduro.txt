@@ -1,0 +1,3 @@
+Description="#666 Metal666 enduro"
+
+Painter="Grimotr"

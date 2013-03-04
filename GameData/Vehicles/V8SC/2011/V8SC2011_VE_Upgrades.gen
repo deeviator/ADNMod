@@ -1,0 +1,232 @@
+
+// This file specifices how to generate the vehicle graphics.
+// It is pointed to by one or more *.veh files.
+//
+// All information except tokens are copied directly.
+// Tokens have the format "<value>" where value is one of the following:
+//
+//   ID        - this is replaced by the proper slot identification (000, 001, etc.), or
+//   1,2,3,etc - this is replaced by the first 1,2,3 characters of the
+//               GenString defined in the corresponding *.veh file
+//   VEHDIR    - this is replaced with the proper vehicles directory (e.g. E:\Data\season01\vehicles)
+//   TEAMDIR   - this is replaced with the proper team directory (e.g. season01\vehicles\williams)
+//   SPIN      - for the vehicle spinner in the options only
+//   NOTSPIN   - for everything EXCEPT the vehicle spinner
+//   LOW       - low detail only
+//   MED       - medium detail only
+//   HIGH      - high detail only
+//   MAX       - maximum detail only
+//   DASHLOW   - low detail dash
+//   DASHHIGH  - high detail dash
+//
+//
+// Example:
+//   For slot #2 using the vehicle file "nicecar.veh", the line
+//   "Instance=SLOT<ID>   MeshFile=<123>gva.gmt" would be replaced with
+//   "Instance=SLOT002   MeshFile=nicgva.gmt"
+
+
+//----------------------------------------
+
+SearchPath=<VEHDIR>
+SearchPath=2011
+
+MASFile=2011\V8SC2011_MOTEC.mas
+MASFile=2011\V8SC2011_CMAPS.mas
+MASFile=2011\V8SC2011_VE.mas
+
+
+//----------------------------------------
+
+Instance=SLOT<ID>
+{
+  Moveable=True
+//------------------------------------MAX CAR SETTINGS---------------------------------------------
+
+<MAX>MeshFile=ve_body.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0) ShadowReceiver=True
+<HIGH>MeshFile=ve_body.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0) ShadowReceiver=True
+<MED>MeshFile=ve_body.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0) ShadowReceiver=True
+<LOW>MeshFile=ve_body.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(500.0) ShadowReceiver=True
+MeshFile=VE_Windows.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(100.0) ShadowReceiver=True Reflect=True
+
+//------------------------------------SHADOW AND COLLISION OBJECTS---------------------------------
+<MAX>MeshFile=ve_body.gmt Render=False CollTarget=True HATTarget=False ShadowObject=(true, Solid, 2048, 2048) LODIn=(0.0) LODOut=(200.0)
+<HIGH>MeshFile=ve_body.gmt Render=False CollTarget=True HATTarget=False ShadowObject=(true, Solid, 2048, 2048) LODIn=(0.0) LODOut=(200.0)
+<MED>MeshFile=ve_body.gmt Render=False CollTarget=True HATTarget=False ShadowObject=(true, Solid, 1024, 1024) LODIn=(0.0) LODOut=(200.0)
+<LOW>MeshFile=ve_body.gmt Render=False CollTarget=True HATTarget=False ShadowObject=(true, Solid, 512, 512) LODIn=(0.0) LODOut=(150.0)
+
+Actor=VEHICLE
+
+  
+/////////////////////////////////////////////////TIRES////////////////////////////////////////////////////////
+<STARTUPGRADES> 
+
+  Instance=LFTIRE<UPNUMBER>
+  {
+   Moveable=True
+   MeshFile=Brake_disk_lf.gmt CollTarget=true HATTarget=False LODIn=(0.00) LODOut=(30.0)
+   MeshFile=discglow_lf.gmt CollTarget=true HATTarget=False LODIn=(0.00) LODOut=(30.0)
+   <MAX>MeshFile=<LFTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 2048, 2048)  LODIn=(0.00) LODOut=(1000.0) ShadowReceiver=True Reflect=True
+   <HIGH>MeshFile=<LFTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 2048, 2048)  LODIn=(0.00) LODOut=(1000.0) ShadowReceiver=True Reflect=True
+   <MED>MeshFile=<LFTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 1024, 1024)  LODIn=(0.00) LODOut=(500.0) Reflect=True
+   <LOW>MeshFile=<LFTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 512, 512)  LODIn=(0.00) LODOut=(500.0) Reflect=True
+  }
+  Instance=LFSPINDLE
+  {
+    Moveable=True
+    MeshFile=caliper_lf.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(50.0)   Reflect=True
+  }
+  
+  Instance=RFTIRE<UPNUMBER>
+  {
+   Moveable=True
+   MeshFile=Brake_disk_rf.gmt CollTarget=true HATTarget=False  LODIn=(0.00) LODOut=(30.0)
+   MeshFile=discglow_rf.gmt CollTarget=true HATTarget=False LODIn=(0.00) LODOut=(30.0)
+   <MAX>MeshFile=<RFTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 2048, 2048)  LODIn=(0.00) LODOut=(1000.0) ShadowReceiver=True Reflect=True
+   <HIGH>MeshFile=<RFTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 2048, 2048)  LODIn=(0.00) LODOut=(1000.0) ShadowReceiver=True Reflect=True
+   <MED>MeshFile=<RFTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 1024, 1024)  LODIn=(0.00) LODOut=(500.0) Reflect=True
+   <LOW>MeshFile=<RFTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 512, 512)  LODIn=(0.00) LODOut=(500.0) Reflect=True
+   }
+  Instance=RFSPINDLE
+  {
+    Moveable=True
+    MeshFile=caliper_rf.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(50.0)   Reflect=True
+  }
+  Instance=LRTIRE<UPNUMBER>
+  {
+   Moveable=True
+   MeshFile=Brake_disk_lr.gmt CollTarget=true HATTarget=False  LODIn=(0.00) LODOut=(30.0)
+   MeshFile=discglow_lr.gmt CollTarget=true HATTarget=False LODIn=(0.00) LODOut=(30.0)
+   <MAX>MeshFile=<LRTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 2048, 2048)  LODIn=(0.00) LODOut=(1000.0) ShadowReceiver=True Reflect=True
+   <HIGH>MeshFile=<LRTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 2048, 2048)  LODIn=(0.00) LODOut=(1000.0) ShadowReceiver=True Reflect=True
+   <MED>MeshFile=<LRTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 1024, 1024)  LODIn=(0.00) LODOut=(500.0) Reflect=True
+   <LOW>MeshFile=<LRTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 512, 512)  LODIn=(0.00) LODOut=(500.0) Reflect=True
+  }
+  Instance=LRSPINDLE
+  {
+    Moveable=True
+    MeshFile=caliper_lr.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(50.0)   Reflect=True
+  }
+
+  Instance=RRTIRE<UPNUMBER>
+  {
+   Moveable=True
+   MeshFile=Brake_disk_rr.gmt CollTarget=true HATTarget=False  LODIn=(0.00) LODOut=(30.0)
+   MeshFile=discglow_rr.gmt CollTarget=true HATTarget=False LODIn=(0.00) LODOut=(30.0)
+   <MAX>MeshFile=<RRTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 2048, 2048)  LODIn=(0.00) LODOut=(1000.0) ShadowReceiver=True Reflect=True
+   <HIGH>MeshFile=<RRTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 2048, 2048)  LODIn=(0.00) LODOut=(1000.0) ShadowReceiver=True Reflect=True
+   <MED>MeshFile=<RRTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 1024, 1024)  LODIn=(0.00) LODOut=(500.0) Reflect=True
+   <LOW>MeshFile=<RRTIRES> CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 512, 512)  LODIn=(0.00) LODOut=(500.0) Reflect=True
+  }
+  Instance=RRSPINDLE
+  {
+    Moveable=True
+    MeshFile=caliper_rr.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(50.0)   Reflect=True
+  }
+
+  Instance=COCKPIT
+  {
+  Moveable=True
+  <MAX>MeshFile=ve_cockpit.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(50.0) ShadowCaster=(Dynamic, Solid, 2048, 2048) Reflect=True
+  <HIGH>MeshFile=ve_cockpit.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(50.0) ShadowCaster=(Dynamic, Solid, 2048, 2048) Reflect=True
+  <MED>MeshFile=ve_cockpit.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(50.0) ShadowCaster=(Dynamic, Solid, 1024, 1024) Reflect=True
+  <LOW>MeshFile=ve_cockpit_Low.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(50.0) ShadowCaster=(Dynamic, Solid, 512, 512) Reflect=True
+  <MAX>MeshFile=ve_cockpit_detail.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0) ShadowCaster=(Dynamic, Solid, 2048, 2048) Reflect=True
+  <HIGH>MeshFile=ve_cockpit_detail.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0) ShadowCaster=(Dynamic, Solid, 2048, 2048) Reflect=True
+  MeshFile=VE_Windows_INT.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(50.0) ShadowCaster=(Dynamic, Solid, 2048, 2048) Reflect=True
+  MeshFile=VE_MoTeC_Display.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(5.0) ShadowReceiver=False
+  MeshFile=VE_MoTeC.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(5.0) ShadowReceiver=True
+  MeshFile=VE_DRIVERSMIRROR.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(5.0) ShadowReceiver=True
+  MeshFile=VE_PASSENGERMIRROR.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(5.0) ShadowReceiver=True
+  MeshFile=VE_COCKPITMIRROR.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(5.0) ShadowReceiver=False
+  MeshFile=VE_DRIVER_SUPPORT.gmt CollTarget=False HATTarget=False LODIn=(1.0) LODOut=(5.0) ShadowReceiver=False
+  }
+
+  Instance=Fwing
+  {
+  Moveable=true
+  <MAX>MeshFile=ve_front_wing.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(1000.0) ShadowReceiver=True
+  <HIGH>MeshFile=ve_front_wing.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(800.0) ShadowReceiver=True
+  <MED>MeshFile=ve_front_wing.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(500.0) ShadowReceiver=True
+  <LOW>MeshFile=ve_front_wing.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(500.0) ShadowReceiver=True
+ }
+ 
+ Instance=Rwing
+  {
+  Moveable=true
+  <MAX>MeshFile=ve_rear_wing.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(1000.0) ShadowReceiver=True
+  <HIGH>MeshFile=ve_rear_wing.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(800.0) ShadowReceiver=True
+  <MED>MeshFile=ve_rear_wing.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(500.0) ShadowReceiver=True
+  <LOW>MeshFile=ve_rear_wing.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(500.0) ShadowReceiver=True
+ }
+ 
+  Instance=COCKPIT_OUTER
+  {
+    Moveable=True
+	MeshFile=VE_COCKPIT_LOW.gmt CollTarget=true HATTarget=False ShadowCaster=(True, Solid, 1024, 1024)  LODIn=(0.00) LODOut=(100.0) Reflect=True
+  }
+
+
+Instance=WHEEL
+{
+  Moveable=True
+  MeshFile=VE_Steeringwheel.gmt CollTarget=False  HATTarget=False LODIn=(0.00) LODOut=(35.0) ShadowReceiver=True
+}
+
+
+  Instance=Helmet
+  {
+    Moveable=True
+    MeshFile=Helmet.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(100.0)     ShadowReceiver=True
+
+  }
+
+  Instance=BODY
+  {
+    Moveable=True
+    MeshFile=Driver.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(100.0) ShadowReceiver=True
+  }
+  
+  PROJECTOR=HEADLIGHT
+  {
+  Moveable=True Dyn=True Active=False Pos=(0, 0.0, -60.0) Dir=(0.0, -0.95, -2.6) Radius=(20) Blend=(InvDstColor, One) TEXMAP=headlight1.DDS
+  }
+
+
+  Instance=HlightPS // HEADLIGHT LEFT
+  {
+  Moveable=True
+  MeshFile=hlglo_ps.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0)  
+  } 
+
+  Instance=HlightDS // HEADLIGHT RIGHT
+  {
+  Moveable=True
+  MeshFile=hlglo_ds.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0) 
+  }
+
+   Instance=BLIGHTDS   //Brakelights -Driver Side
+  {
+    Moveable=True
+    MeshFile=blglo_DS.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(100.0) 
+  }
+
+  Instance=BLIGHTPS   //Brakelights -Passenger Side
+  {
+    Moveable=True
+    MeshFile=blglo_PS.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(100.0) 
+  }
+ 
+  Instance=RAINLIGHT
+  {
+    Moveable=True
+    MeshFile=rainlight.gmt CollTarget=False HATTarget=False LODIn=(0.00) //LODOut=(110.0) ShadowReceiver=False
+  }
+ 
+  Instance=BACKFIRE
+  {
+    Moveable=True
+    MeshFile=VE_BACKFIRE.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(100.0) //ShadowReceiver=False
+  }
+<STOPUPGRADES>
+}

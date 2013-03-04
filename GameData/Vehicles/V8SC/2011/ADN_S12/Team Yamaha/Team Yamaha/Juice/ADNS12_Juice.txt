@@ -1,0 +1,3 @@
+Description="#69 Juice - Team Yamaha Racing"
+
+Painter="Bergmeister"

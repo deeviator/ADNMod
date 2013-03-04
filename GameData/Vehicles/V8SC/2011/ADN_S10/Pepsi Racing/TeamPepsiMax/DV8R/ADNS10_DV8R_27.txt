@@ -1,0 +1,3 @@
+Description="Default Livery"
+
+Painter="DV8R"

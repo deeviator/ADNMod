@@ -1,0 +1,149 @@
+VehicleClassSetting="V8SC-2010"
+UpgradeSetting=(2,0)
+//VEH=GAMEDATA\VEHICLES\V8SC\2010\ADN_S9_TEAMS\PEPSI RACING\TEAM PEPSI\PAPAOSA\ADN_S9_PAPAOSA.VEH
+//UpgradeClass=
+//Round Setup=2
+//Steering Wheel=0
+//Note: settings commented out if using the default
+
+[GENERAL]
+Notes=""
+Symmetric=0
+//CGRightSetting=0//50.0:50.0
+//CGRearSetting=0//50.0:50.0
+//WedgeSetting=0//0.00 turns
+//FrontTireCompoundSetting=0//Dunlop Control
+//RearTireCompoundSetting=0//Dunlop Control
+FuelSetting=109//110L (23laps)
+NumPitstopsSetting=2//2
+Pitstop1Setting=74//75L (16laps)
+Pitstop2Setting=74//75L (16laps)
+//Pitstop3Setting=35//N/A
+
+[LEFTFENDER]
+//FenderFlareSetting=0//0.0 cm
+
+[RIGHTFENDER]
+//FenderFlareSetting=0//0.0 cm
+
+[FRONTWING]
+//FWSetting=1//2
+
+[REARWING]
+//RWSetting=4//5
+
+[BODYAERO]
+//RadiatorSetting=3//4
+BrakeDuctSetting=1//2
+
+[SUSPENSION]
+FrontAntiSwaySetting=0//10 N/mm
+RearAntiSwaySetting=8//45 N/mm
+//FrontToeInSetting=12//-0.80 deg
+RearToeInSetting=19//-0.10 deg
+LeftCasterSetting=14//3.5 deg
+RightCasterSetting=12//3.0 deg
+LeftTrackBarSetting=20//12.0 cm
+RightTrackBarSetting=200//30.0 cm
+//Front3rdPackerSetting=0//0.0 cm
+//Front3rdSpringSetting=0//Detached
+//Front3rdSlowBumpSetting=0//1
+//Front3rdFastBumpSetting=0//1
+//Front3rdSlowReboundSetting=0//1
+//Front3rdFastReboundSetting=0//1
+//Rear3rdPackerSetting=0//0.0 cm
+//Rear3rdSpringSetting=0//Detached
+//Rear3rdSlowBumpSetting=0//1
+//Rear3rdFastBumpSetting=0//1
+//Rear3rdSlowReboundSetting=0//1
+//Rear3rdFastReboundSetting=0//1
+
+[CONTROLS]
+SteerLockSetting=20//15.0 deg
+RearBrakeSetting=28//66.0:34.0
+BrakePressureSetting=10//90%
+HandbrakePressSetting=1//5%
+
+[ENGINE]
+//RevLimitSetting=0//7,500
+//EngineBoostSetting=0//1
+EngineBrakingMapSetting=5//5
+
+[DRIVELINE]
+//FinalDriveSetting=3//13/41 (bevel  1/ 1)
+//ReverseSetting=0//14/36 (8.110)
+Gear1Setting=0//14/36 (8.110)
+Gear2Setting=1//17/34 (6.308)
+Gear3Setting=2//19/31 (5.146)
+Gear4Setting=3//21/28 (4.205)
+Gear5Setting=4//23/26 (3.565)
+Gear6Setting=5//24/24 (3.154)
+//DiffPumpSetting=0//0%
+//DiffPowerSetting=0//100%
+//DiffCoastSetting=0//100%
+DiffPreloadSetting=4//5
+//RearSplitSetting=0// 0.0:100.0
+
+[FRONTLEFT]
+CamberSetting=20//-4.5 deg
+PressureSetting=104//194 kPa
+PackerSetting=40//4.0 cm
+SpringSetting=0//95 N/mm
+//SpringRubberSetting=0//Detached
+//RideHeightSetting=1//12.5 cm
+SlowBumpSetting=8//9
+FastBumpSetting=2//3
+//SlowReboundSetting=5//6
+FastReboundSetting=7//8
+//BrakeDiscSetting=0//3.5 cm
+//BrakePadSetting=2//3
+
+[FRONTRIGHT]
+CamberSetting=20//-4.5 deg
+PressureSetting=105//195 kPa
+PackerSetting=40//4.0 cm
+SpringSetting=0//95 N/mm
+//SpringRubberSetting=0//Detached
+RideHeightSetting=2//13.0 cm
+SlowBumpSetting=8//9
+FastBumpSetting=2//3
+//SlowReboundSetting=5//6
+FastReboundSetting=8//9
+//BrakeDiscSetting=0//3.5 cm
+//BrakePadSetting=2//3
+
+[REARLEFT]
+CamberSetting=23//-2.2 deg
+PressureSetting=105//195 kPa
+PackerSetting=30//3.0 cm
+SpringSetting=0//61 N/mm
+//SpringRubberSetting=0//Detached
+RideHeightSetting=0//12.5 cm
+SlowBumpSetting=9//10
+//FastBumpSetting=3//4
+SlowReboundSetting=2//3
+//FastReboundSetting=5//6
+//BrakeDiscSetting=0//3.2 cm
+//BrakePadSetting=2//3
+
+[REARRIGHT]
+CamberSetting=23//-2.2 deg
+PressureSetting=105//195 kPa
+PackerSetting=30//3.0 cm
+SpringSetting=0//61 N/mm
+//SpringRubberSetting=0//Detached
+RideHeightSetting=1//13.0 cm
+SlowBumpSetting=9//10
+//FastBumpSetting=3//4
+SlowReboundSetting=3//4
+//FastReboundSetting=5//6
+//BrakeDiscSetting=0//3.2 cm
+//BrakePadSetting=2//3
+
+[BASIC]
+Downforce=0.500000
+Balance=0.500000
+Ride=0.500000
+Gearing=0.500000
+Custom=1
+

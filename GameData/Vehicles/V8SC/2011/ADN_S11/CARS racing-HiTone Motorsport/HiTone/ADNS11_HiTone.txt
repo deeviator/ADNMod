@@ -1,0 +1,3 @@
+Description="#95 HiTone - Cars racing HiTone Motorsport"
+
+Painter="HiTone PaintWorX"

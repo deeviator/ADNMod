@@ -1,0 +1,3 @@
+Description="#999 YZ250 - Team Yamaha Racing"
+
+Painter="Bergmeister"

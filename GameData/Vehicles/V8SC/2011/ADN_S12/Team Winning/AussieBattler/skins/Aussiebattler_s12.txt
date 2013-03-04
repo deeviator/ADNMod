@@ -1,0 +1,3 @@
+Description="#73 - Aussiebattler Racing - Enduro"
+
+Painter="Aussiebattler"

@@ -1,0 +1,3 @@
+Description="#33 Lee Holdsworth Garry Rogers Motorsport"
+
+Painter="Bergmeister"

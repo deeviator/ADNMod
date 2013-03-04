@@ -1,0 +1,84 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// This file specifices how to generate the vehicle graphics for the options car spinner only.
+// It is pointed to by one or more *.veh files.
+//
+// All information except tokens are copied directly.
+// Tokens have the format "<value>" where value is one of the following:
+//   ID        - this is replaced by the proper slot identification (000, 001, etc.), or
+//   1,2,3,etc - this is replaced by the first 1,2,3 characters of the
+//               vehicle filename
+//   VEHDIR    - this is replaced with the proper vehicles directory (e.g. E:\Data\season01\vehicles)
+//   TEAMDIR   - this is replaced with the proper team directory (e.g. season01\vehicles\williams)
+//   SPIN      - for the vehicle spinner in the options only
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//----------------------------------------
+
+
+SearchPath=<VEHDIR>
+SearchPath=2011
+
+MASFile=2011\V8SC2011_CMAPS.mas
+MASFile=2011\V8SC2011_MOTEC.mas
+MASFile=2011\V8SC2011_FG.mas
+
+ReflectPlane=(0.0, 0.0, 0.0, 0.0)
+
+//----------------------------------------
+
+Instance=SLOT<ID>
+{
+  Moveable=True
+  MeshFile=fg_windows.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(100.0) Reflect=True
+  MeshFile=blglo_DS.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(100.0) 
+  MeshFile=blglo_PS.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(100.0)
+  MeshFile=fg_hood.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0) Reflect=True
+  MeshFile=fg_front_wing.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0) Reflect=True
+  MeshFile=fg_rear_wing.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0) Reflect=True
+  MeshFile=STEERING_WHEEL_SPINNER.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0)
+  MeshFile=FG_MoTeC_Display.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0)
+  MeshFile=FG_MoTeC.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0)
+  MeshFile=rainlight.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(500.0)
+  MeshFile=cockpit.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0) 
+  MeshFile=body.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(1000.0) Reflect=True
+ 
+ 
+  Actor=VEHICLE
+
+<STARTUPGRADES> 
+
+Instance=LFTIRE<UPNUMBER>
+  {
+   Moveable=True
+   MeshFile=Brake_disk_lf.gmt CollTarget=False HATTarget=False 
+   MeshFile=caliper_lf.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(50.0)   Reflect=True
+   MeshFile=<LFTIRE> CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(1000.0) Reflect=True
+   
+  }
+  
+  Instance=RFTIRE<UPNUMBER>
+  {
+   Moveable=True
+   MeshFile=Brake_disk_rf.gmt CollTarget=False HATTarget=False
+   MeshFile=caliper_rf.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(50.0) Reflect=True
+   MeshFile=<RFTIRE> CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(1000.0) Reflect=True
+  }
+
+  Instance=LRTIRE<UPNUMBER>
+  {
+   Moveable=True
+   MeshFile=Brake_disk_lr.gmt CollTarget=false HATTarget=False 
+   MeshFile=caliper_lr.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(50.0)   Reflect=True
+   MeshFile=<LRTIRE> CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(1000.0) Reflect=True
+  }
+
+  Instance=RRTIRE<UPNUMBER>
+  {
+   Moveable=True
+   MeshFile=Brake_disk_rr.gmt CollTarget=False HATTarget=False
+   MeshFile=caliper_rr.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(50.0)   Reflect=True
+   MeshFile=<RRTIRE> CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(1000.0) Reflect=True
+  }
+  
+<STOPUPGRADES>
+}

@@ -1,0 +1,3 @@
+Description="EMG Pickups #18"
+
+Painter="J-Holley"

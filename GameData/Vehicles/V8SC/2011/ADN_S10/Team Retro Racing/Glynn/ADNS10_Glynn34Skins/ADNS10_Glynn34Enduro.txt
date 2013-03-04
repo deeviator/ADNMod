@@ -1,0 +1,3 @@
+Description="#34 - Team Retro Racing Enduro Livery"
+
+Painter="HiTone PaintWorX"

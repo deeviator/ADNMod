@@ -1,0 +1,3 @@
+Description="#34 Michael Caruso Garry Rogers Motorsport"
+
+Painter="Bergmeister"

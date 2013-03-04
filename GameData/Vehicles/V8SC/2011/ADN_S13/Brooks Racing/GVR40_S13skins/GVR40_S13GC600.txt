@@ -1,0 +1,3 @@
+Description="#5 GVR40 - Brooks Racing GC600"
+
+Painter="Craig"
